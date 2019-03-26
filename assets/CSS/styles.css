@@ -1,0 +1,9 @@
+hr {
+  border: none;
+  height: 4px;
+  background-color: rgb(52,58,64)
+}
+
+.show-buttons button {
+  margin: 7px;
+}

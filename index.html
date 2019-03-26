@@ -9,6 +9,34 @@
   <title>gif-tastic</title>
 </head>
 <body>
+  <div class="container">
+    <div class="row my-2">
+      <div class="col-8 show-buttons">
+        <button type="button" class="btn btn-dark" id="Firefly" data-searchValue="Firefly">Firefly</button>
+        <button type="button" class="btn btn-dark" id="atlab" data-searchValue="Avatar: The Last Airbender">A:TLAB</button>
+        <button type="button" class="btn btn-dark" id="mrRobot" data-searchValue="Mr. Robot">Mr. Robot</button>
+      </div>
+      <div class="col-4">
+        <form>
+          <div class="form-group">
+            <label for="searchValue">Search:</label>
+            <input type="text" class="form-control" id="searchValue" placeholder="Enter your favorite TV show!">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col"><hr></div>
+        <div class="col-auto gif-search-name">RESPONSE TITLE HERE</div>
+        <div class="col"><hr></div>
+    </div>
+
+    <div class="row gif-stage">
+      <!-- append col-4 size gifs here so that they wrap around  -->
+    </div>
+  </div>
   
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src="assets/javascript/main.js"></script>
