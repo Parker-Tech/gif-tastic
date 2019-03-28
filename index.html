@@ -5,35 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/CSS/styles.css">
   <title>gif-tastic</title>
 </head>
 <body>
   <div class="container">
-    <div class="row my-2">
+    <div class="row my-2 header-color">
       <div class="col-8 show-buttons">
-        <button type="button" class="btn btn-dark" id="Firefly" data-searchValue="Firefly">Firefly</button>
-        <button type="button" class="btn btn-dark" id="atlab" data-searchValue="Avatar: The Last Airbender">A:TLAB</button>
-        <button type="button" class="btn btn-dark" id="mrRobot" data-searchValue="Mr. Robot">Mr. Robot</button>
+        <button type="button" class="btn btn-dark gif-btn" id="firefly" data-searchValue="Firefly">Firefly</button>
+        <button type="button" class="btn btn-dark gif-btn" id="avatar" data-searchValue="Avatar">Avatar</button>
+        <button type="button" class="btn btn-dark gif-btn" id="mrRobot" data-searchValue="Mr. Robot">Mr. Robot</button>
       </div>
       <div class="col-4">
         <form>
           <div class="form-group">
-            <label for="searchValue">Search:</label>
+            <label id="search-text" for="searchValue">Search:</label>
             <input type="text" class="form-control" id="searchValue" placeholder="Enter your favorite TV show!">
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" id="searchBtn" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </div>
 
     <div class="row">
         <div class="col"><hr></div>
-        <div class="col-auto gif-search-name">RESPONSE TITLE HERE</div>
+        <div class="col-auto gif-search-name"><span style="font-size: 50px"><i class="fab fa-napster"></span></i></div>
         <div class="col"><hr></div>
     </div>
 
-    <div class="row gif-stage">
+    <div class="row gif-stage justify-content-center">
       <!-- append col-4 size gifs here so that they wrap around  -->
     </div>
   </div>

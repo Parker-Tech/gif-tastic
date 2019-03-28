@@ -7,3 +7,14 @@ hr {
 .show-buttons button {
   margin: 7px;
 }
+
+img {
+  width: 480px;
+  height: 360px;
+  /* margin: 5px; */
+}
+
+body {
+  background-color: #3F657F;
+  color: white;
+}
